@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.signup-header{
+  width: 100%;
+  height: 50px;
+  background: #296BFB;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  width: 100%;
+  height: calc(100vh - 50px);
+  position: relative;
+}
+.form-div{
+    width: 550px;
+    padding: 20px;
+    height: auto;
+    background: whitesmoke;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+.form-head{
+    border: 1px solid gray;
+    border-radius: 50px;
+    height: 40px;
+}
+.form-head .head-button{
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.form-div .form-head .login{
+  background: #00F1CC;
+  /* height: 40px; */
+  border-radius: 50px;
+}
+.form-div .form-head .signup{
+   background: #00F1CC;
+   /* height: 40px; */
+   border-radius: 50px;
+}
+.half-width{
+  width: 48%;
+ display: flex;
+ flex-direction: column;
+}
+.dflex{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.full-width{
+  width: 100%;
+}
+.form-control,.form-select{
+  font-size: 0.8rem !important;
+  line-height: 1 !important;
+}
+.sub-signup{
+  width: 100%;
+    background-color: #00F1CC !important;
+    color: #000 !important;
+    border-radius: 50px !important;
+    border: none !important;
+}
+.main-div{
+  padding: 0px 30px;
+  border-bottom: 2px solid #000;
+}
+.menu-item{
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.me-right i{
+  font-size: 20px;
+  margin-right: 10px;
+}
+.product-card img{
+    max-height: 200px;
+    min-height: 200px;
+}
+.card-title{
+  font-size: 17px !important;
 }
